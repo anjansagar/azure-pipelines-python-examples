@@ -22,7 +22,7 @@ jobs:
   - script: |
       pip install pytest-django
       cd django-basic/azuredemo
-      pytest --junitxml=/django_basic/reports/django-basic.xml
+      pytest --junitxml=../../reports/django-basic.xml
     displayName: 'Run tests'
   - task: PublishTestResults@2
     inputs:
